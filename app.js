@@ -3,7 +3,7 @@ const app = express();
 
 app.use(express.static("public"));
 
-app.use(express.json());
+
 
 const PORT = process.env.PORT || 8080;
 
@@ -14,19 +14,19 @@ app.get("/", (req, res) => {
 
 });
 
-app.get("/1", (req, res) => {
+app.get("/first", (req, res) => {
 
     res.sendFile(__dirname + "/public/firstpage.html");
 
 });
 
-app.get("/2", (req, res) => {
+app.get("/second", (req, res) => {
 
     res.sendFile(__dirname + "/public/secondpage.html");
 
 });
 
-app.get("/3", (req, res) => {
+app.get("/third", (req, res) => {
 
     res.sendFile(__dirname + "/public/thirdpage.html");
 
