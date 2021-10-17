@@ -24,7 +24,30 @@
         
         <h1> Tools </h1>
 
+        <h2> Express </h2>
+        <p>Express er et web framework til Nodes.js. </p>
+        <p>Express et library af metoder der gør det nemt at udvikle Node baserede web applikationer.</p>
+        
+        <br>
 
+        <h2> Nodemon </h2>
+        <p>Nodemon er et udviklingsværktøj som automatisk genstarter programmet hver gang der sker en ændring i koden.</p>
+        <p>Nodemon er smart fordi man ikke behøver at genstarte koden manuelt efter hver ændring.</p>
+        <p>npm nodemon app.js - kører programmet i Nodemon tilstand</p>
+
+        <br>
+
+        <h2> Cross-env </h2>
+        <p>Cross-env bruges til at sætte miljø variabler og parse dem til Node.js.</p>
+        <p>Normalt gøres det på forskellige måder på tværs af forskellige OS. Hvilket gør det problematisk hvis udviklingsholdet ikke arbejder i samme OS.</p>
+        
+        <br>
+
+        <p>"scripts": {
+            "start-dev": "cross-env NODE_ENV=DEV PORT=8080 nodemon app.js"
+          },</p>
+        <p>Dette script er angivet i package.json og indeholder in cross-env command line som sætter miljø variablen til DEV(development), porten til 8080 og starter programmet i Nodemon</p>
+        <p></p>
 
 
     </div>
